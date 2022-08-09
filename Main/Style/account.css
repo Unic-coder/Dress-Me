@@ -1,0 +1,70 @@
+/* Content */
+
+@media only screen and (max-width: 2000.98px) {
+    .Myacount-box h2 {
+        font-size: medium;
+        font-weight: bold;
+    }
+    .Rtxt {
+        display: flex;
+    }
+    .Myacount-box {
+        position: relative;
+        margin-top: -50%;
+        margin-left: 28%;
+        color: rgb(59, 59, 58);
+        width: 600px;
+    }
+    .Myacount-box h3 {
+        font-size: large;
+        padding-top: 15px;
+    }
+    .RRNG {
+        margin-top: 100px;
+        margin-left: 28%;
+    }
+    .Rtbl {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 38%;
+    }
+    .Ptxt {
+        margin-left: 60%;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .Myacount-box {
+        margin-top: -600px;
+        margin-left: 34%;
+        color: rgb(59, 59, 58);
+        width: 600px;
+    }
+    .txtbox {
+        width: 350px;
+    }
+    .RRNG,
+    .Rtbl {
+        margin-left: 34%;
+    }
+    .Ptxt {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .Myacount-box {
+        margin-top: -400px;
+        margin-left: 10%;
+    }
+    .Rtxt {
+        display: flex;
+    }
+    .txtbox {
+        width: 300px;
+    }
+    .RRNG,
+    .Rtbl {
+        margin-left: 25%;
+    }
+}

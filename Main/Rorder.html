@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order</title>
+    <link rel="stylesheet" href="Style/account.css">
+    <!-- Header -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#profile").load("profile.html");
+            $("#securebnr").load("securebnr.html");
+        });
+    </script>
+
+    <!-- linking the css file with the html page -->
+    <link rel="stylesheet" href="Style/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Font awasom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div id="profile"></div>
+
+        <div class="Myacount-box">
+            <h1 class="text-danger">Return Order</h1>
+            <hr style="color: rgb(6, 81, 202); border-width: 5px;">
+            <h2>Order Number : 34fhn48c74fbfn474</h2>
+            <br>
+            <div class="Rtxt">
+                <div>
+                    <img src="Image/Dress-4.jpeg" width="150" height="150">
+                </div>
+                <div class="txtbox ms-3" style="margin-top: -18px;">
+                    <h3 class="text-dark">Fashion wear - black colour for women...</h3>
+                    <div style="color: gold;">
+                        <i class="fa-solid fa-star "></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3 style="font-size: small; opacity: 70%;">Colour : Multicolour</h3>
+                    <h3 class="mt-2 text-danger">₹ 499</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="RRNG">
+            <div class="d-flex">
+                <h5 style="font-size: medium;">Return</h5>
+                <h5 class="Ptxt">Pickup</h5>
+            </div>
+            <input class="slider" type="range" min="1" max="100" value="98">
+            <h6 class="text-dark">Delivered on 10th jul 2022</h6>
+        </div>
+        <div>
+            <table class="Rtbl">
+                <tr>
+                    <td><span style="color: #22aa0a; font-weight: bold;">Replacement Completed : </span>ID : 59u23-0136u4-345 </th>
+                </tr>
+                <tr>
+
+                    <td>We have completed your request for replacement</th>
+
+                </tr>
+            </table>
+        </div>
+        <div id="securebnr"></div>
+
+
+    </main>
+    <div id="footer"></div>
+    <style>
+        table tr,
+        td {
+            border: 1px solid black;
+        }
+        
+        .RRNG h5 {
+            font-size: medium;
+        }
+        
+        .RRNG h6 {
+            position: relative;
+            font-size: medium;
+            background: rgb(255, 255, 255);
+            width: 70%;
+            padding-top: 30px;
+            bottom: 6px;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            width: 70%;
+            height: 10px;
+            border-radius: 10px;
+            background: #ff0000;
+            outline: none;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #ff0000;
+            cursor: pointer;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</body>
+
+</html>

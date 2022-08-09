@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- linking the css file with the html page -->
+    <link rel="stylesheet" href="Style/header.css">
+    <!-- CSS only Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- Font awasom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header style="z-index:2;">
+        <!-- Adding Site Image and name -->
+        <div role="Weblgog" class="HIMG">
+            <a href="index.html"> <img class="d-md-flex d-sm-block d-md-block position-fixed rounded-circle mt-md-2 ms-md-2 mt-sm-2" src="Image/Logo.jpeg" alt="Weblogo" width="70" height="70"></a>
+            <h3 class="position-absolute ps-md-5 mt-md-4 ms-md-5" style="color: black;"><span>U-Shop</span></h3>
+        </div>
+
+        <!-- Adding Menu for smaller devices (Mobile)-->
+        <div id="MGRP" class="Mlst">
+            <!-- Adding hanmburger logo  -->
+            <i id="HLbar" class="fa-solid fa-bars fa-2x d-md-none d-lg-none " onclick="DroupDown(MenuList)"></i>
+
+            <div id="Mlst" class="Menlst">
+                <div class="Prof pt-3">
+                    <img src="Image/Logo.jpeg" alt="profile" width="40px" height="40px" class="border rounded-circle border-1 ms-3">
+                    <a href="login.html"><button class="btn btn-danger ms-5">Sign Up</button></a>
+                </div>
+                <hr>
+                <div class="d-flex ">
+                    <i style="color: rgb(240, 182, 107);" class="fa-solid fa-box-open fa-2x ms-2"></i>
+                    <a href="#" class="text-decoration-none">
+                        <h3><a class="mt-2 ms-4 text-dark" style="text-decoration: none; font-size: large;" href="myorder.html">My order</a></h3>
+                    </a>
+                </div>
+                <hr>
+                <div class="MLitm" style="list-style: none;">
+                    <ul class="list-group">
+                        <h2>Category</h2>
+                        <li><a href="">women</a></li>
+                        <li><a href="">Men</a></li>
+                        <li><a href="">Kids</a></li>
+                        <li><a href="">Beauty & Health</a></li>
+                        <li><a href="">Bags & Footware</a></li>
+                        <li><a href="">Home & Kitchen</a></li>
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                    <hr>
+                    <h5 class="text-danger" style="font-size: medium;">Become a Seller</h5>
+                    <hr>
+                    <h2>contact us</h2>
+                    <h6>sales@ushop.in</h6>
+                </div>
+            </div>
+        </div>
+
+
+
+        </div>
+
+        <!-- Menu for larger screen pc, laptop ,tablet -->
+        <div class="position-absolute mt-md-4 " id="Hmenu">
+            <!-- Navigation Buttons -->
+            <div id="Mba" class="Mba d-sm-block">
+                <ul class="d-md-flex d-sm-none" style="list-style:none;">
+                    <li><a href="index.html" target="_self"><button  role="button" id="HOME">Home</button></a></li>
+                    <button role="button" onclick="DroupDown(Categ_DropDown)" class="btn dropdown-toggle ">Category</button>
+
+                    <li><a href="sellerpg.html"><button role="button" id="CONus">Seller</button></a></li>
+                    <button role="button" onclick="DroupDown(Morebtn)" class="btn dropdown-toggle " id="more">More</button>
+                </ul>
+                <div id="Category-Btn" class="cat_lst" style="display:none;">
+                    <ul class="list-unstyled ">
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Homes & Kitchen</a></li>
+                        <li><a href="#">Huddy</a></li>
+                        <li><a href="#">Bag & Footwear</a></li>
+                        <li><a href="#">Womens Western</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div id="More-Btn" class="More-Btn" style="display:none;">
+                    <ul class="list-unstyled ">
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="#">Faq's</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- Added search / cart / wishlist icon's in web page for big screen -->
+        <div id="HLicn" class="position-absolute d-md-flex d-sm-flex " style="margin-left:75%; ">
+            <!-- Adding search icon -->
+            <div id="search" class="Lbtn d-md-flex" onclick="DroupDown(Searchbtn)">
+                <i class="fa-solid fa-magnifying-glass fa-2x "></i>
+            </div>
+            <!-- Adding cart icon -->
+            <div id="Cart" class="Lbtn d-sm-flex ">
+                <a href="cart.html"> <i style="color: black;" class="fa-solid fa-cart-plus fa-2x "></i></a>
+            </div>
+            <!-- Adding wishlist icon -->
+            <div id="wishlst" class="Lbtn ">
+                <a href="wishlist.html "><i style="color: rgb(192, 18, 18);" class="fa-solid fa-heart fa-2x"></i></a>
+            </div>
+            <div id="LGbtn" class="Lbtn ms-lg-4 d-lg-flex d-md-none d-sm-none">
+                <a href="login.html"><button class="btn btn-danger">Login</button></a>
+            </div>
+            <!-- Adding login icon -->
+            <div id="login" class="Lbtn ">
+                <a href="login.html"><i style="color: black;" class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></a>
+            </div>
+        </div>
+        <!-- search -->
+        <div id="SbTn" class="SbTn">
+            <form class="FrmS">
+                <input id="srch-IPM" type="search" name="search" value="" class="border border-5 border-secondary ps-3 rounded-3   " placeholder="Search...">
+            </form>
+        </div>
+    </header>
+</body>
+
+<!-- Script -->
+<script>
+    //Search button on click
+    var Searchbtn = document.getElementById("SbTn");
+
+    var MenuList = document.getElementById("Mlst");
+
+    var Morebtn = document.getElementById("More-Btn");
+
+    var Categ_DropDown = document.getElementById("Category-Btn");
+
+
+    // Drop down
+    function DroupDown(val) {
+        if (val.style.display === "none") {
+            val.style.display = "block";
+        } else {
+            val.style.display = "none";
+        }
+    }
+</script>
+
+</html>

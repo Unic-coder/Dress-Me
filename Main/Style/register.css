@@ -1,0 +1,61 @@
+/* 
+style used in 
+* contact us
+* login
+* Register */
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.form2 h4 {
+    margin-top: -3px;
+    font-size: small;
+    color: rgb(77, 77, 77);
+}
+
+#form2 {
+    box-shadow: 2px 2px 20px black;
+}
+
+
+/* contact form message */
+
+textarea {
+    height: 100px;
+}
+
+@media only screen and (max-width: 2000.98px) {
+    #form2 {
+        width: 350px;
+        border-radius: 15px;
+        margin-top: 15%;
+        margin-left: 35%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    #form2 {
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    #form2 {
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    #form2 {
+        margin-top: 25%;
+        margin-left: 18%;
+    }
+}

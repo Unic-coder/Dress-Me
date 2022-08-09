@@ -1,0 +1,212 @@
+@media only screen and (max-width: 575.98px) {
+    #Hmenu {
+        display: none;
+    }
+    #HLicn {
+        display: flex;
+        right: 20px;
+    }
+    #LGbtn {
+        display: none;
+    }
+    #HLbar {
+        margin: 30px;
+    }
+    .SbTn {
+        position: absolute;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    header {
+        position: absolute;
+    }
+    .HIMG img {
+        width: 50px;
+        height: 50px;
+        left: 45%;
+    }
+    .HIMG h3 {
+        left: 43%;
+        top: 60px;
+    }
+    #HLbar {
+        margin: 30px;
+    }
+    .FrmS {
+        margin-left: -30%;
+    }
+    .HIMG h3 {
+        margin-top: -3px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    #Hmenu {
+        left: -83px;
+    }
+    #wishlst {
+        display: flex;
+    }
+    .SbTn {
+        display: none;
+    }
+    .Lbtn {
+        left: 30px;
+    }
+    .SbTn {
+        margin-left: 60%;
+        margin-top: 70px;
+    }
+    .Menlst {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 2000.98px) {
+    header {
+        background: rgb(255, 255, 255);
+        position: fixed;
+        width: 100%;
+        height: 13%;
+        display: flex;
+        z-index: 1;
+        top: 0px;
+        box-shadow: 2px 2px 20px gray;
+        animation: HeAnim;
+        animation-duration: 3s;
+    }
+    #Hmenu {
+        margin-left: 30%;
+    }
+    #Hmenu button {
+        color: white;
+        background: black;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        border-style: none;
+        margin-left: 10px;
+    }
+    @keyframes HeAnim {
+        from {
+            background: rgb(67, 66, 66);
+        }
+        to {
+            background: rgb(255, 255, 255);
+        }
+    }
+    #Hmenu button:hover {
+        color: gray;
+        transition: 1s;
+    }
+    .SbTn {
+        display: none;
+    }
+    .Lbtn {
+        margin-right: 20px;
+    }
+    #HLicn {
+        margin-top: 27px;
+    }
+    #login {
+        display: none;
+    }
+    .SbTn {
+        margin-left: 60%;
+        margin-top: 70px;
+    }
+    .Menlst {
+        display: none;
+    }
+}
+
+@media (max-width: 1399.98px) {}
+
+.Menlst {
+    background: rgb(255, 255, 255);
+    border-right: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding-left: 10px;
+    height: 570%;
+    overflow-y: auto;
+}
+
+.MLitm {
+    margin-left: 10px;
+}
+
+.MLitm ul {
+    list-style: none;
+    font-size: medium;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.MLitm h6 {
+    color: black;
+    text-align: center;
+}
+
+.MLitm h2 {
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+}
+
+.MLitm ul li a:hover {
+    color: rgb(225, 15, 68);
+}
+
+hr {
+    width: 200px;
+    left: 20px;
+}
+
+.MLitm ul li a {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
+
+
+/* mode button list */
+
+.More-Btn {
+    margin-left: 65%;
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+}
+
+.More-Btn ul li a,
+.cat_lst ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.More-Btn ul li a:hover,
+.cat_lst ul li a:hover {
+    color: rgb(225, 15, 68);
+    transition: 0.5s;
+}
+
+.More-Btn ul li,
+.cat_lst ul li {
+    line-height: 40px;
+}
+
+
+/* category */
+
+.cat_lst {
+    margin-left: 28%;
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+}
