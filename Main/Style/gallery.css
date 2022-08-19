@@ -1,0 +1,114 @@
+/* product_box_section */
+
+.Products-list-box {
+    margin-left: 13%;
+}
+
+
+/* Product image size*/
+
+.Products-list-box .row img {
+    height: 400px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+/* Product Hover Icon*/
+
+.product_row .icon_over_img a i {
+    color: black;
+}
+
+
+/* Product Hover Icon (HOVER)*/
+
+.icon_over_img a i:hover {
+    color: rgb(212, 57, 14);
+    padding-right: 10px;
+}
+
+
+/* Product name - Ratting - cost*/
+
+.category-caption {
+    overflow: hidden;
+    height: 48px;
+    width: 250px;
+}
+
+
+/* on mouse over product image will blur
+blur effect for product image*/
+
+.blur>img {
+    opacity: 60%;
+    transition: 1s;
+}
+
+
+/* select icon over image - wishlist - cart - view*/
+
+.icon_over_img {
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 5%;
+}
+
+
+/* caterory list */
+
+.Category_img_list img {
+    margin-left: 15%;
+}
+
+@media only screen and (max-width: 2000.98px) {}
+
+@media only screen and (max-width: 991.98px) {
+    .filter {
+        display: none;
+    }
+    .icon_over_img {
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 8%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .Products-list-box .row img {
+        height: 350px;
+        width: 200px;
+        border-radius: 10px;
+    }
+    .filter {
+        display: none;
+    }
+    .icon_over_img {
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .Products-list-box .row img {
+        height: 400px;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .Products-list-box {
+        margin-left: 35%;
+    }
+    .single_product {
+        margin-bottom: 15px;
+    }
+    .Products-slide-box {
+        margin-left: 5%;
+    }
+    .icon_over_img {
+        position: absolute;
+        margin-top: -20%;
+        margin-left: 13%;
+    }
+}

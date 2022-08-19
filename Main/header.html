@@ -15,13 +15,22 @@
     <!-- Font awasom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <script src="script/script.js"></script>
 
 </head>
+
 
 <body>
 
     <!-- header -->
     <header style="z-index:2;">
+        <div class="d-lg-flex d-none " style="margin-top: -13px;">
+            <h6 class="position-absolute text-light w-50" style="background: rgb(0, 0, 0); font-size: small;">Mail : sales@ushop.in</h6>
+            <h6 class="position-absolute text-light end-0 w-50" style="background: rgb(0, 0, 0); font-size: small;">Contact Us :
+                <span id="c_num">9023659745</span>&nbsp;&nbsp;
+            </h6>
+        </div>
+
         <!-- Adding Site Image and name -->
         <div role="Weblgog" class="HIMG">
             <a href="index.html"> <img class="d-md-flex d-sm-block d-md-block position-fixed rounded-circle mt-md-2 ms-md-2 mt-sm-2" src="Image/Logo.jpeg" alt="Weblogo" width="70" height="70"></a>
@@ -68,6 +77,8 @@
         </div>
 
 
+        <div class="select-flag">
+            <button onclick="DroupDown(flag_select)" class="mt-2 ms-3 btn btn-dark dropdown-toggle"><i class="fa-solid fa-font-awesome me-2"></i><span id="Country_txt">India</span></button>
 
         </div>
 
@@ -78,7 +89,6 @@
                 <ul class="d-md-flex d-sm-none" style="list-style:none;">
                     <li><a href="index.html" target="_self"><button  role="button" id="HOME">Home</button></a></li>
                     <button role="button" onclick="DroupDown(Categ_DropDown)" class="btn dropdown-toggle ">Category</button>
-
                     <li><a href="sellerpg.html"><button role="button" id="CONus">Seller</button></a></li>
                     <button role="button" onclick="DroupDown(Morebtn)" class="btn dropdown-toggle " id="more">More</button>
                 </ul>
@@ -97,9 +107,16 @@
                 <div id="More-Btn" class="More-Btn" style="display:none;">
                     <ul class="list-unstyled ">
                         <li><a href="myaccount.html">My Account</a></li>
-                        <li><a href="#">Faq's</a></li>
+                        <li><a href="FAQs.html">Faq's</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div id="flag_select" class="flag_select" style="display:none;">
+                    <ul class="list-unstyled ">
+                        <li onclick="chng('in')"><a href="#">India</a></li>
+                        <li onclick="chng('us')"><a href="#">USA</a></li>
+                        <li onclick="chng('ra')"><a href="#">Russia</a></li>
                     </ul>
                 </div>
             </div>
@@ -137,6 +154,7 @@
     </header>
 </body>
 
+
 <!-- Script -->
 <script>
     //Search button on click
@@ -146,15 +164,26 @@
 
     var Morebtn = document.getElementById("More-Btn");
 
+    var flagbtn = document.getElementById("flag_select");
+
     var Categ_DropDown = document.getElementById("Category-Btn");
 
+    var number = document.getElementById("c_num");
+    var button_txt = document.getElementById("Country_txt");
 
-    // Drop down
-    function DroupDown(val) {
-        if (val.style.display === "none") {
-            val.style.display = "block";
-        } else {
-            val.style.display = "none";
+
+
+    function chng(country_name) {
+        if (country_name == "in") {
+            number.innerHTML = "9023659745"
+            button_txt.innerHTML = "India"
+
+        } else if (country_name == "us") {
+            number.innerHTML = "2653659745"
+            button_txt.innerHTML = "USA"
+        } else if (country_name == "ra") {
+            number.innerHTML = "6544659745"
+            button_txt.innerHTML = "Russia"
         }
     }
 </script>

@@ -16,6 +16,9 @@
         position: absolute;
         left: 10%;
     }
+    .select-flag {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -40,6 +43,9 @@
     .HIMG h3 {
         margin-top: -3px;
     }
+    .select-flag {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -56,10 +62,13 @@
         left: 30px;
     }
     .SbTn {
-        margin-left: 60%;
+        padding-left: 20%;
         margin-top: 70px;
     }
     .Menlst {
+        display: none;
+    }
+    .select-flag {
         display: none;
     }
 }
@@ -68,8 +77,9 @@
     header {
         background: rgb(255, 255, 255);
         position: fixed;
+        padding-top: 13px;
         width: 100%;
-        height: 13%;
+        height: 14%;
         display: flex;
         z-index: 1;
         top: 0px;
@@ -116,7 +126,7 @@
         display: none;
     }
     .SbTn {
-        margin-left: 60%;
+        margin-left: 35%;
         margin-top: 70px;
     }
     .Menlst {
@@ -181,8 +191,16 @@ hr {
     border-radius: 10px;
 }
 
+.flag_select {
+    margin-right: 70%;
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+}
+
 .More-Btn ul li a,
-.cat_lst ul li a {
+.cat_lst ul li a,
+.flag_select ul li a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: medium;
@@ -191,13 +209,15 @@ hr {
 }
 
 .More-Btn ul li a:hover,
-.cat_lst ul li a:hover {
+.cat_lst ul li a:hover,
+.flag_select ul li a:hover {
     color: rgb(225, 15, 68);
     transition: 0.5s;
 }
 
 .More-Btn ul li,
-.cat_lst ul li {
+.cat_lst ul li,
+.flag_select ul li {
     line-height: 40px;
 }
 
@@ -209,4 +229,35 @@ hr {
     background: rgb(0, 0, 0);
     box-shadow: 2px 2px 20px grey;
     border-radius: 10px;
+}
+
+.flag_select {
+    margin-left: -43%;
+    margin-right: 117%;
+    background: rgb(0, 0, 0);
+    box-shadow: 2px 2px 20px grey;
+    border-radius: 10px;
+}
+
+
+/* country-flag */
+
+.select-flag {
+    margin-left: 19%;
+    margin-top: 16px;
+}
+
+.result {
+    position: absolute;
+    top: 3px;
+    font-size: small;
+    margin-left: 60%;
+}
+
+select.country {
+    width: 100px;
+    height: 30px;
+    font-size: 22px;
+    font-size: small;
+    border: 2px solid black;
 }

@@ -1,0 +1,156 @@
+.full_container {
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.wishlist_icon {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -50px;
+    color: rgb(247, 2, 2);
+}
+
+.Multi_img img {
+    margin-bottom: 10px;
+}
+
+.Product_Size {
+    width: 40px;
+    padding-top: 5px;
+    margin-right: 3px;
+    text-align: center;
+    border: 2px solid grey;
+}
+
+.Product_color {
+    width: 30px;
+    margin-right: 5px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.Product_Size h5 {
+    font-size: larger;
+}
+
+.replace_txt {
+    color: green;
+}
+
+.product-txt {
+    padding-right: 10px;
+    height: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 120px;
+    width: 100%;
+}
+
+.replace_txt i span {
+    padding-left: 5px;
+    color: black;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Small ratting button */
+
+.rating {
+    width: 80px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background: green;
+}
+
+.tag {
+    color: green;
+}
+
+.offer_tag {
+    font-weight: bold;
+}
+
+.Product-container {
+    overflow-x: hidden;
+    margin-left: 0px;
+}
+
+.Product-Img {
+    width: 404px;
+}
+
+.Product-Img button {
+    margin-top: 10%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+}
+
+.breadcrumb_box ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.breadcrumb_box {
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 575.98px) {
+    .product-txt {
+        padding-right: 10px;
+        height: 700px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: 120px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .Product-container {
+        display: block;
+        margin-left: -50px;
+        padding-top: 5%;
+    }
+    .Product-Img {
+        margin-left: 15%;
+    }
+    .product-txt {
+        margin-top: 15px;
+        width: 80%;
+    }
+    .Size_color {
+        display: flex;
+    }
+    .breadcrumb_box {
+        position: relative;
+        margin-top: 12%;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .Product-container {
+        display: block;
+        margin-left: -50px;
+        margin-top: 0%;
+    }
+    .Product-Img {
+        margin-left: 20%;
+    }
+    .product-txt {
+        margin-top: 15px;
+    }
+    .Size_color {
+        display: flex;
+    }
+    .breadcrumb_box {
+        padding-top: 5%;
+    }
+}
