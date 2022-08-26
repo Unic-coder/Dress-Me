@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h3>My website</h3>
+    <p class="p1" style="cursor: pointer;"> My Website</p>
+    <p class="p2" style="cursor: pointer;display: none;"> Click to hide p</p>
+    <button class="btn1">
+        single/double click
+    </button>
+    <button class="btn2">
+        Button-2
+    </button>
+    <button class="btn3">
+        Button-3
+    </button>
+    <button class="btn4">
+        hover
+    </button>
+    <button class="btn5">
+        Hide/Show
+    </button>
+    <button class="btn6">
+        fade method
+    </button>
+    <button class="btn8">
+        Animination
+    </button>
+    <button class="btn9">
+        Stop
+    </button>
+    <div class="box"></div>
+    <p class="HS">Hide and Show (toogle)</p>
+
+    <button class="btn7">Slide</button>
+    <p class="slidep">Slide down method</p>
+    <br> Name:
+    <input class="in1" type="text"> Age:
+    <input class="in1" type="number"><br>
+
+    <button class="btn10">Chain</button>
+    <p class="chainp">Chain methos<br> Eg: $("#p1").css("color", "red").slideUp(2000).slideDown(2000);</p>
+
+    <button class="btn11">
+        Altert text
+    </button>
+    <button class="btn12">
+        Alert html
+    </button>
+    <p id="text">Entered text</p>
+    <button class="btn13">
+        change Text/old/new
+    </button>
+
+    <p id="txt">This is my text.</p>
+    <button class="btn14">
+        Append /prepend text
+    </button>
+    <button class="btn15">
+        Append li
+    </button>
+    <button class="btn16">
+        Remove method - remove button15( Append li)
+    </button>
+    <button class="btn17">
+        empty method - button15( Append li)
+    </button>
+    <button class="btn18">
+        colour - toggleClass
+    </button>
+    <p id="txtappend">This is my text.</p>
+
+
+    <ol class="ordlst">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+    </ol>
+
+    <p class="cssmanip">Css manipulation</p>
+    <p id="csss">.css (change css)</p>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+        
+        .color {
+            color: brown;
+        }
+        
+        .colour {
+            color: rgb(210, 10, 210);
+            font-weight: bold;
+        }
+        
+        .fontbig {
+            font-size: xx-large;
+        }
+    </style>
+
+
+</body>
+<script>
+    $(document).ready(function() {
+        $(".p1").click(function() {
+            $(this).hide();
+            $(this).delay(1000);
+            $(this).show(1000);
+
+        });
+
+        //Mouse click
+        $(".btn1").click(function() {
+            $(".p1").hide();
+            $("h3").hide();
+        })
+
+
+        //Mouse Double Click
+        $(".btn1").dblclick(function() {
+                $(".p1").show();
+                $("h3").show();
+            })
+            //cursor enter the button
+        $(".btn2").mouseenter(function() {
+                alert("Entered button2")
+            })
+            //cursor leaves the button
+        $(".btn2").mouseleave(function() {
+                alert("Button2 : bye")
+            })
+            //Mouse button click
+        $(".btn3").mousedown(function() {
+                alert("Mouse clicked");
+            })
+            //Mouse button release
+        $(".btn3").mouseup(function() {
+                alert("Mouse released");
+            })
+            //mouse hover on the element
+        $(".btn4").hover(function() {
+            $(this).css("color", "red")
+        });
+        //colour change on focus or click
+        $("input").focus(function() {
+            $(this).css("background-color", "grey")
+        });
+        //color change when it looses focus 
+        $("input").blur(function() {
+            $(this).css("background-color", "blue")
+        });
+
+        //on click method attaches one or more event handlers for the selected elements.
+        //Example : 1
+        $(".btn4").on("click", function() {
+            $(this).hide(0);
+            $(this).delay(1000);
+            $(this).show(0);
+        });
+
+        //Example : 2
+        $(".btn4").on({
+            mouseenter: function() {
+                $(this).css("background-color", "black");
+            },
+            mouseleave: function() {
+                $(this).css("background-color", "blue")
+            }
+        })
+
+        //toogle (for using bith hide and show we can use toogle)
+        $(".btn5").on({
+            click: function() {
+                $(".HS").toggle(1000, function() {
+                    $(".btn5").hide(2000, function() {
+                        $(".btn5").show();
+                    });
+
+                })
+            }
+        })
+
+        //fade mthod
+        // Syntax : $(selector).fadeTo(speed,opacity,callback);
+        $(".btn6").click(function() {
+            $(".box").fadeOut(1000, function() {
+                $(this).fadeIn(1000);
+            });
+        })
+
+        $(".btn7").click(function() {
+            $(".slidep").slideUp();
+            $(".slidep").slideDown();
+            // $(".slidep").slideToggle();
+        })
+        $(".btn8").on({
+                dblclick: function() {
+                    $(".box").animate({
+                        margin: "50px",
+                        height: "+=150px",
+                        width: "100px"
+                    }, 1000, function() {
+                        $(".box").animate({
+                            height: "-=100px"
+                        })
+                    })
+                },
+
+                click: function() {
+                    $(".box").animate({
+                        height: "toggle",
+                    }, 1000)
+                },
+
+            })
+            //stop the animination
+        $(".btn9").click(function() {
+            $(".box").stop();
+        })
+        $(".btn10").click(function() {
+            $(".chainp").css("color", "violet").slideUp(1000).slideDown(1000)
+        })
+        $(".btn11").click(function() {
+            alert("Text : " + $("#text").text())
+        })
+        $(".btn12").click(function() {
+                alert("Text : " + $("#text").html())
+            })
+            //change the text
+        $(".btn13").click(function() {
+            //change the text
+            //$("#txt").text("hello")
+            $("#txt").text(function(i, origtxt) {
+                return "Old Text : " + origtxt + "New text : this is my new text";
+            })
+        })
+        $(".btn14").click(function() {
+            $("#txtappend").append("Append text");
+            $("#txtappend").prepend("Prepend text_");
+        })
+        $(".btn15").click(function() {
+            $(".ordlst").append('<li>list4</li>');
+        })
+        $(".btn16").click(function() {
+            $(".btn15").remove();
+        })
+        $(".btn17").click(function() {
+            $(".btn15").empty();
+        })
+
+        //Adding & Removing class
+        $(".cssmanip").addClass("color");
+        $(".cssmanip").addClass("fontbig");
+        $(".cssmanip").removeClass("fontbig");
+        //Adding toogle class
+        $(".btn18").click(function() {
+            $(".cssmanip").toggleClass("colour");
+        })
+
+        $("#csss").css({
+            "background-color": "yellow",
+            "font-size": "200%"
+
+        });
+
+
+    })
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+{
+    "Product": [{
+            "id": "1",
+            "Name": "Women Maxi Multicolor Dress",
+            "price": "499",
+            "offer price": "460",
+            "image name": "Product-page-7",
+            "isnew": "TRUE",
+            "ratting": "4"
+        },
+        {
+            "id": "2",
+            "Name": "Casual Regular Sleeves Solid Women Maroon Top",
+            "price": "599",
+            "offer price": "540",
+            "image name": "Product-page-5",
+            "isnew": "FALSE",
+            "ratting": "3"
+        },
+        {
+            "id": "3",
+            "Name": "Women Kurta and Dupatta Set Georgette, Crepe",
+            "price": "876",
+            "offer price": "835",
+            "image name": "Product-page-4",
+            "isnew": "FALSE",
+            "ratting": "5"
+        },
+        {
+            "id": "4",
+            "Name": "Men wear",
+            "price": "399",
+            "offer price": "339",
+            "image name": "Dress-9",
+            "isnew": "FALSE",
+            "ratting": "5"
+        },
+        {
+            "id": "5",
+            "Name": "Men T-shirt",
+            "price": "649",
+            "offer price": "605",
+            "image name": "Dress-4",
+            "isnew": "TRUE",
+            "ratting": "5"
+        },
+        {
+            "id": "6",
+            "Name": "Casual wear - Mean",
+            "price": "268",
+            "offer price": "220",
+            "image name": "Dress-8",
+            "isnew": "TRUE",
+            "ratting": "3"
+        },
+        {
+            "id": "7",
+            "Name": "Huddy - Multi colour",
+            "price": "776",
+            "offer price": "600",
+            "image name": "Product-page-6",
+            "isnew": "TRUE",
+            "ratting": "2"
+        },
+        {
+            "id": "8",
+            "Name": "Track for men's ",
+            "price": "368",
+            "offer price": "326",
+            "image name": "Product-page-3",
+            "isnew": "FALSE",
+            "ratting": "3"
+        }
+    ]
+}

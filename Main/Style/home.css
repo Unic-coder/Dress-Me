@@ -33,7 +33,7 @@
     padding-top: 10px;
 }
 
-.Hprd img {
+.Category_img_list img {
     margin-left: 15%;
 }
 
@@ -68,5 +68,8 @@
     }
     .csslide {
         padding-top: 3%;
+    }
+    .Category_img_list img {
+        margin-left: 15%;
     }
 }
