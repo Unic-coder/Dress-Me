@@ -1,5 +1,7 @@
 /* Content */
-
+@media only screen and (max-width: 450px){
+    
+}
 @media only screen and (max-width: 2000.98px) {
     .Myacount-box h2 {
         font-size: medium;

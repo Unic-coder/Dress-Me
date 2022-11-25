@@ -73,3 +73,24 @@
         margin-left: 15%;
     }
 }
+
+@media only screen and (max-width: 450px) {
+
+    .csslide {
+        padding-top: 11%;
+    }
+    .Products-list-box{
+        right: 50px !important;
+        
+    }
+    .who{
+        margin-right: 40%;
+    }
+    span{
+        z-index: 999;
+    }
+    .price{
+        margin-top: 5px;
+    }
+
+}

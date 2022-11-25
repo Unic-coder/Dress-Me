@@ -1,3 +1,13 @@
+@media only screen and (max-width:450px){
+    #search {
+        display: none;
+    }
+    header{
+        width: 100% !important;
+    }
+
+}
+
 @media only screen and (max-width: 575.98px) {
     #Hmenu {
         display: none;
@@ -141,7 +151,7 @@
     border-right: 3px solid gray;
     border-bottom: 3px solid gray;
     padding-left: 10px;
-    height: 570%;
+    /* height: 570%; */
     overflow-y: auto;
 }
 
