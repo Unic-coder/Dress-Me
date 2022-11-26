@@ -33,10 +33,6 @@
     padding-top: 10px;
 }
 
-.Category_img_list img {
-    margin-left: 15%;
-}
-
 
 /* fixing responsiveness */
 
@@ -45,6 +41,18 @@
         margin-left: 20px;
         padding-right: 10px;
     }
+    .Category_img_list li a img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .Category_img_list{
+        margin-left: 80px;
+    }
+    #lst-box ul{
+        padding-left: 15%;
+    }
+
 }
 
 @media only screen and (max-width: 991.98px) {
@@ -55,9 +63,25 @@
         margin-left: 20px;
         margin-right: 10px;
     }
+    #lst-box ul{
+        padding-left: 7%;
+    }
+    
 }
 
-@media only screen and (max-width: 767.98px) {}
+@media only screen and (max-width: 767.98px) {
+    .Category_img_list li a img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .Category_img_list{
+        margin-left: 40px;
+    }
+    #lst-box ul{
+        padding-left: 7%;
+    }
+}
 
 @media only screen and (max-width: 575.98px) {
     .nav-menu nav a {
@@ -69,9 +93,19 @@
     .csslide {
         padding-top: 3%;
     }
-    .Category_img_list img {
-        margin-left: 15%;
+    .Category_img_list li a img{
+        width: 100px;
+        height: 100px;
+        
     }
+    .Category_img_list{
+        margin-left: 20px;
+    }
+    #lst-box ul{
+        padding-left: 3%;
+    }
+    
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -92,9 +126,15 @@
     .price{
         margin-top: 5px;
     }
-    .Category_img_list img{
-        width: 80px;
-        height: 80px;
+    .Category_img_list li a img{
+        width: 70px;
+        height: 70px;
+        
     }
-
+    .Category_img_list{
+        margin-left: 10px;
+    }
+    #lst-box ul{
+        padding-left: 5%;
+    }
 }
