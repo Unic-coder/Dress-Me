@@ -68,9 +68,9 @@
                         <li><a href="wishlist.html">Wishlist</a></li>
                     </ul>
                     <hr>
-                    <h5 class="text-danger" style="font-size: medium;">Become a Seller</h5>
+                    <h5><a class="text-danger" style="font-size: medium; text-decoration: none;" href="sellerpg.html">Become a Seller</a></h5>
                     <hr>
-                    <h2>contact us</h2>
+                    <h2><a href="contact.html">contact us</a></h2>
                     <h6>sales@ushop.in</h6>
                 </div>
             </div>
@@ -78,7 +78,7 @@
 
 
         <div class="select-flag">
-            <button onclick="DroupDown(flag_select)" class="mt-2 ms-3 btn btn-dark dropdown-toggle"><i class="fa-solid fa-font-awesome me-2"></i><span id="Country_txt">India</span></button>
+            <button onmouseover="DroupDown(flag_select); hide(Categ_DropDown); hide(Morebtn)" class="mt-2 ms-3 btn btn-dark dropdown-toggle"><i class="fa-solid fa-font-awesome me-2"></i><span id="Country_txt">India</span></button>
 
         </div>
 
@@ -88,9 +88,9 @@
             <div id="Mba" class="Mba d-sm-block">
                 <ul class="d-md-flex d-sm-none" style="list-style:none;">
                     <li><a href="home.html" target="_self"><button  role="button" id="HOME">Home</button></a></li>
-                    <button role="button" onclick="DroupDown(Categ_DropDown)" class="btn dropdown-toggle ">Category</button>
+                    <button role="button" onmouseover="DroupDown(Categ_DropDown); hide(Morebtn); hide(flag_select)" class="btn dropdown-toggle ">Category</button>
                     <li><a href="sellerpg.html"><button role="button" id="CONus">Seller</button></a></li>
-                    <button role="button" onclick="DroupDown(Morebtn)" class="btn dropdown-toggle " id="more">More</button>
+                    <button role="button" onmouseover="DroupDown(Morebtn); hide(Categ_DropDown);hide(flag_select)" class="btn dropdown-toggle " id="more">More</button>
                 </ul>
                 <div id="Category-Btn" class="cat_lst" style="display:none;">
                     <ul class="list-unstyled ">

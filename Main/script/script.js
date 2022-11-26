@@ -7,6 +7,9 @@ function DroupDown(val) {
 
     }
 }
+function hide(val){
+    val.style.display="none";
+}
 
 //scroll back to top
 window.onscroll = function() {

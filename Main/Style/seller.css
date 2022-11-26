@@ -117,3 +117,18 @@
         margin-top: 15%;
     }
 }
+@media only screen and (max-width: 575.98px) {
+    .Form-Seller {
+        margin-left: -310px;
+        top: 50%;
+    }
+
+    .seller-Form-img h1 {
+        font-size: medium;
+        width: 250px;
+    }
+    .seller-Form-img img {
+        width: 100px;
+        height: 200px;
+    }
+}
