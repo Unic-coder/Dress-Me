@@ -4,6 +4,8 @@
     }
     header{
         width: 100% !important;
+        position:absolute; 
+
     }
 
 }

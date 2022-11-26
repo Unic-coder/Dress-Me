@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Order</title>
-    <link rel="stylesheet" href="Style/account.css">
+   
     <!-- Header -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
@@ -21,6 +21,7 @@
 
     <!-- linking the css file with the html page -->
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/account.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -31,13 +32,13 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <div id="header" style="width: 100%;"></div>
     <main>
         <div id="profile"></div>
-
+<div class="tot-box">
         <div class="Myacount-box">
             <h1 class="text-danger">Return Order</h1>
-            <hr style="color: rgb(6, 81, 202); border-width: 5px;">
+            <hr style="color: rgb(6, 81, 202); border-width: 5px; width: 100%;">
             <h2>Order Number : 34fhn48c74fbfn474</h2>
             <br>
             <div class="Rtxt">
@@ -68,7 +69,7 @@
             <input class="slider" type="range" min="1" max="100" value="98">
             <h6 class="text-dark">Delivered on 10th jul 2022</h6>
         </div>
-        <div>
+        <div class="tab-box">
             <table class="Rtbl">
                 <tr>
                     <td><span style="color: #22aa0a; font-weight: bold;">Replacement Completed : </span>ID : 59u23-0136u4-345 </th>
@@ -81,50 +82,12 @@
             </table>
         </div>
         <div id="securebnr"></div>
+    </div>
 
 
     </main>
     <div id="footer"></div>
-    <style>
-        table tr,
-        td {
-            border: 1px solid black;
-        }
-        
-        .RRNG h5 {
-            font-size: medium;
-        }
-        
-        .RRNG h6 {
-            position: relative;
-            font-size: medium;
-            background: rgb(255, 255, 255);
-            width: 70%;
-            padding-top: 30px;
-            bottom: 6px;
-        }
-        
-        .slider {
-            -webkit-appearance: none;
-            width: 70%;
-            height: 10px;
-            border-radius: 10px;
-            background: #ff0000;
-            outline: none;
-            -webkit-transition: .2s;
-            transition: opacity .2s;
-        }
-        
-        .slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 25px;
-            height: 25px;
-            background: #ff0000;
-            cursor: pointer;
-            transform: rotate(45deg);
-        }
-    </style>
+
 
 </body>
 

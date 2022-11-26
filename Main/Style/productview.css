@@ -154,3 +154,16 @@
         padding-top: 5%;
     }
 }
+@media only screen and (max-width: 450px) {
+.pgm{
+    margin-top: 22%;
+}
+#products{
+    
+    margin-left: -56px;
+}
+.icon_over_img{
+    margin-top: -50%;
+    margin-left: 70px;
+}
+}

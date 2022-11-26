@@ -1,5 +1,62 @@
 /* Content */
+
+table tr,
+        td {
+            border: 1px solid black;
+        }
+        
+        .RRNG h5 {
+            font-size: medium;
+        }
+        
+        .RRNG h6 {
+            position: relative;
+            font-size: medium;
+            background: rgb(255, 255, 255);
+            width: 70%;
+            padding-top: 30px;
+            bottom: 6px;
+        }
+        
+        .slider {
+            -webkit-appearance: none;
+            width: 70%;
+            height: 10px;
+            border-radius: 10px;
+            background: #ff0000;
+            outline: none;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #ff0000;
+            cursor: pointer;
+            transform: rotate(45deg);
+        }
 @media only screen and (max-width: 450px){
+    .tot-box {
+        position: relative;
+        margin-top: -450px;
+        width: 100%;
+    }
+    .Myacount-box{
+        margin-left: 10px;
+    }
+    .tab-box{
+        
+        width: 400px;
+    }
+    .prof{
+        height: 200px;
+    }
+    .Myacount-box{
+        margin-left: 30px;
+    }
     
 }
 @media only screen and (max-width: 2000.98px) {
@@ -9,13 +66,6 @@
     }
     .Rtxt {
         display: flex;
-    }
-    .Myacount-box {
-        position: relative;
-        margin-top: -50%;
-        margin-left: 28%;
-        color: rgb(59, 59, 58);
-        width: 600px;
     }
     .Myacount-box h3 {
         font-size: large;
@@ -36,12 +86,7 @@
 }
 
 @media only screen and (max-width: 991.98px) {
-    .Myacount-box {
-        margin-top: -600px;
-        margin-left: 34%;
-        color: rgb(59, 59, 58);
-        width: 600px;
-    }
+    
     .txtbox {
         width: 350px;
     }
@@ -55,10 +100,6 @@
 }
 
 @media only screen and (max-width: 767.98px) {
-    .Myacount-box {
-        margin-top: -400px;
-        margin-left: 10%;
-    }
     .Rtxt {
         display: flex;
     }
