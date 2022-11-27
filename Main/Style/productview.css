@@ -212,14 +212,13 @@
 }
 @media only screen and (max-width: 450px) {
 
-    .breadcrumb_box {
-        margin-top: 30%;
-    }
+
     .breadcrumb_box a{
         font-size: small;
     }
     .breadcrumb_box ul{
-        width: 400px;
+        width: 370px;
+        margin-top: 30%;
     }
 
 #products{
