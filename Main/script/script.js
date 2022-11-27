@@ -13,7 +13,7 @@ function hide(val){
 
 //scroll back to top
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction(hide);
 }
 var mybutton = document.getElementById("Bto");
 
