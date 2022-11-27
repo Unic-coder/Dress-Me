@@ -137,4 +137,7 @@
     #lst-box ul{
         padding-left: 5%;
     }
+    .nav-menu {
+        top: 10px;
+    }
 }
